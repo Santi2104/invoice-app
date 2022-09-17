@@ -1,24 +1,21 @@
-import {createRouter, createWebHistory} from 'vue-router'
-import invoidIndex from '../components/invoices/index.vue'
-import notFound from '../components/notFound.vue'
-
+import { createRouter, createWebHistory } from "vue-router";
+import invoidIndex from "../components/invoices/index.vue";
+import notFound from "../components/notFound.vue";
 
 const routes = [
-
     {
-        path: '/',
-        component: invoidIndex
+        path: "/",
+        component: invoidIndex,
     },
     {
-        path: '/:pathMatch(.*)*',
-        component: notFound
-    }
-
-]
+        path: "/:pathMatch(.*)*",
+        component: notFound,
+    },
+];
 
 const router = createRouter({
     history: createWebHistory(),
-    routes
-})
+    routes,
+});
 
-export default router
+export default router;
