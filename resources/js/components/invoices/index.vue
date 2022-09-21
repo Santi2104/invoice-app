@@ -97,6 +97,12 @@ const search = async () => {
 
 }
 
+const newInvoice = async () => {
+
+    let form = await axios.get("/api/create_invoice")
+
+}
+
 </script>
 
 <style>
